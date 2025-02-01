@@ -16,6 +16,13 @@
             margin-bottom: 20px;
             border: 1px solid #ccc;
             padding: 20px;
+            background-color: white;
+            box-shadow: 2px 2px 10px darkgray;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .project:hover {
+            transform: scale(1.02);
         }
     </style>
 
@@ -25,9 +32,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="about">About Me</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#about" class="menu">About Me</a></li>
+                <li><a href="#projects" class="menu">Projects</a></li>
+                <li><a href="#contact" class="menu">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,27 +43,42 @@
         <div class="container">
             <img src="./images/profile.jpg" width="200px" alt="Profile Photo">
             <h1>Hailey Akinsola</h1>
-            <p style="font-family: 'Courier New', Courier, monospace; color: brown">Student</p>
-            <p>I am a student majoring in Computer Science and Technical Communication at Iowa State University.</p>
+            <p style="font-family: 'Courier New', Courier, monospace; color: rgb(117, 31, 31)">Student</p>
+            <p style="margin-bottom: 10px">I am a student double majoring in Computer Science and Technical Communication at Iowa State University.
+                I'm passionate about exploring the intersections between technology and human experience to create user-friendly software.
+                I'm currently the webmaster for the Digital Women Club at ISU, where I manage and maintain our website. 
+                I'm also involved with the Girls Who Code Club and the Computer Science and Software Engineering Club, 
+                where I enjoy collaborating with others and learning more about the field.</p>
+            <p>I have been on the Dean's List for several semesters and am a proud member of the ISU Honors Program. 
+                Outside of academics, I love music and enjoy playing the clarinet, alto saxophone, and piano. 
+                I also enjoy doing arts and crafts, reading, and listening to music. 
+                I’m always eager to learn new technologies and work on ways to mix technology and communication.</p>
         </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <img src="" alt="Project 1" >
-        <h3>Project 1</h3>
-        <p>The first project is related to develop a single Web page using
-            only two technologies: HTML and CSS. The project consists in
-            creating a single web page with a menu at the top know as
-            Navigation Bar. We have to include text describing ourself and
-            text describing the project. Additionally, we need to include
-            two images: one image is of ourself and second image is anything
-            related to the project itself.</p>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="./images/project1.png" alt="Project 1" >
+                <h3>Project 1</h3>
+                <p>The first project is related to developing a single Web page using
+                    only two technologies: HTML and CSS. The project consists of
+                    creating a single web page with a menu at the top known as
+                    Navigation Bar. We have to include text describing ourselves and
+                    text describing the project. Additionally, we need to include
+                    two images: one image is of ourselves and the second image is anything
+                    related to the project itself.</p>
+            </div>
+                <!-- More projects coming soon! -->
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at haakin27@iastate.edu</p>
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me at <a href="mailto:haakin27@iastate.edu" id="email">haakin27@iastate.edu</a></p>
+        </div>
     </section>
 
     <footer>
